@@ -125,11 +125,9 @@ echo power(2, rand(-10, 10));
 echo "<br><br>task 7<br>";
 $hours = date("H");
 $minutes = (int)date("i");
-for ($hours = 0; $hours <= 23; $hours++) {
-    if ($hours >= 5 && $hours <= 20 || $hours == 0) echo "<br>" . $hours . " часов ";
-    elseif ($hours % 10 >= 2 && $hours % 10 <= 4) echo "<br>" . $hours . " часа ";
-    else echo "<br>" . $hours . " час ";
-    if ($minutes == 1 || $minutes == 21 || $minutes == 31 || $minutes == 41 || $minutes == 51) echo $minutes . " минута";
-    elseif ($minutes % 10 >= 2 && $minutes % 10 <= 4 && ($minutes < 5 || $minutes > 20)) echo $minutes . " минуты";
-    else echo $minutes . " минут";
-}
+if ($hours >= 5 && $hours <= 20 || $hours == 0) echo "<br>" . $hours . " часов ";
+elseif ($hours % 10 >= 2 && $hours % 10 <= 4) echo "<br>" . $hours . " часа ";
+else echo "<br>" . $hours . " час ";
+if ($minutes == 1 || $minutes == 21 || $minutes == 31 || $minutes == 41 || $minutes == 51) echo $minutes . " минута";
+elseif ($minutes % 10 >= 2 && $minutes % 10 <= 4 && ($minutes < 5 || $minutes > 20)) echo $minutes . " минуты";
+else echo $minutes . " минут";
