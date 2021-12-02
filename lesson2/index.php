@@ -68,6 +68,9 @@ function mul($a, $b)
 }
 function div($a, $b)
 {
+    if (!$b) {
+        return "Нельзя делить на 0";
+    }
     return $a / $b;
 }
 
@@ -83,9 +86,6 @@ function mathOperation($arg1, $arg2, $operation)
         case "*":
             return mul($arg1, $arg2);
         case "/":
-            if (!$arg2) {
-                return "Нельзя делить на 0";
-            }
             return div($arg1, $arg2);
         default:
             echo "Введён неправильный знак операции";
