@@ -25,7 +25,9 @@ body .fullimage {
 }
 
 .fullimage img {
-  width: 750px;
+  width: 600px;
+  max-height: 600px;
+  border-radius: 50px;
 }
 
 body a {

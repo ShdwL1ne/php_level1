@@ -7,6 +7,14 @@ body {
   background-color: black;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-bottom: 50px;
+  font-size: 3em;
+}
+
 main {
   margin: auto;
   width: 70vw;
