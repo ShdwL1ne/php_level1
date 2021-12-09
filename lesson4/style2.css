@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+body .fullimage {
+  width: 80vh;
+  height: 80vh;
+  background-color: #24ecff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 20px #24ecff33, 0 0 0 40px #24ecff22, 0 0 0 60px #24ecff11,
+    0 0 60px #24ecff, 0 0 90px #24ecff;
+}
+
+.fullimage img {
+  width: 750px;
+}
+
+body a {
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
+  margin-top: -100px;
+}
